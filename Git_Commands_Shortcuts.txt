@@ -1,0 +1,81 @@
+======= Commands using Git Bash=============
+1--> Change Username:
+		     git config --global user.name Zeeshan
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2--> Change Email:
+		    git config --global user.email zh123123@gmail.com
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3--> Initialize the Repository:
+			      git init
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4--> Open VS code:
+		  code .
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5--> Show the status of the Repo:			     // If the file is not added or if it is modified it will be shown in red color 
+				git status
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6--> Show summarized status of all the files in the repo:
+							  git status -s
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7--> Add File to the Repository
+				git add index.html   		//To add individual file 
+				git add -A    	     		//To add All files at once
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8--> Git commit to Finally Commit/Saved the files:
+						  git commit index.html   		// Not Recommended it is a little lengthy
+						  git commit -m ("Any message")	  	// Commit all files at onces
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9--> Create new empty file:
+			   touch file.html         // Every time you create or modify a new  file || you have to add and then commit that to the repo
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10--> Recover previous file from the repo:       
+					git checkout file.html                  // In case a single file is to be Recovered
+					git checkout -f   		        // In case multiple files are to be recovered
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11--> Show details about the Author:
+				    git log     		// Overall commits
+				    git log -p -3/4/5 		// Filter latest Commits
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12--> Compare Working Area with Prev Area:
+					  git diff
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13--> Remove a file from repo:
+			     git rm --cached waste.html
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14--> Remove a file from hardisk:
+				git rm waste.html
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15--> create .gitignore file:
+				 // This file will carry the data or files which we don't want to push to the repo
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16--> How to make files ignored: 
+			      // in the .gitignore file type the name of the file like if i want to ignore mylogs.log i will type it there
+			      // if i want to ignore all .log files or .jpg or anyother i will type the *.log or what i want to ignore
+			      // if i want to ignore the just specific file in which .gitignore is present then i will type /file.log or whatever needed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17--> What is branch and master branch:
+				      Master branch is the area in which overall process working is going on like a processing/running website.. let's suppose we want
+to make some changing without affecting the main/master branch then we made a branch using 
+
+-->(git branch branch_name)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17--> Switching between Branch:
+			      // git checkout branch_name
+			      // git checkout master
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18--> Creating and switching at the same time:
+			      // git checkout -b flask integration
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+======================================================= Pushing and Pulling Code to Github ============================================================================										
+
+19--> Add Local Repo to Github:
+git remote add Any_Short_Name github_url
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20--> Remove Any_Short_Name of the github_url Repo:
+						    git remote remove origin
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+21--> Push repository to the github:
+					git push -u any_short_name master
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
